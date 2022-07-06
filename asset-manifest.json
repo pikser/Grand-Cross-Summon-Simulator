@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/GC-Summon-Simulator/static/css/main.4a9a167b.css",
+    "main.js": "/GC-Summon-Simulator/static/js/main.5d0adbc9.js",
+    "static/media/FestEli_Banner.png": "/GC-Summon-Simulator/static/media/FestEli_Banner.3a90960477494b9492ac.png",
+    "static/media/Freyr_Banner.png": "/GC-Summon-Simulator/static/media/Freyr_Banner.84bf693670ac6d408be0.png",
+    "static/media/SeasonalBrunhild_Banner.png": "/GC-Summon-Simulator/static/media/SeasonalBrunhild_Banner.1d2cbd3c81e511fa398d.png",
+    "static/media/FestEli_Banner_small.png": "/GC-Summon-Simulator/static/media/FestEli_Banner_small.605de360b9049d6941dd.png",
+    "static/media/Freyr_Banner_small.png": "/GC-Summon-Simulator/static/media/Freyr_Banner_small.57deec531972801f3826.png",
+    "static/media/SeasonalBrunhild_Banner_small.png": "/GC-Summon-Simulator/static/media/SeasonalBrunhild_Banner_small.18d891da54f31e6acff2.png",
+    "index.html": "/GC-Summon-Simulator/index.html",
+    "main.4a9a167b.css.map": "/GC-Summon-Simulator/static/css/main.4a9a167b.css.map",
+    "main.5d0adbc9.js.map": "/GC-Summon-Simulator/static/js/main.5d0adbc9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a9a167b.css",
+    "static/js/main.5d0adbc9.js"
+  ]
+}
