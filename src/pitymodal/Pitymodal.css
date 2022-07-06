@@ -1,0 +1,91 @@
+.modal--background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal--container {
+    width: 40%;
+    height: max-content;
+    background-color: lightblue;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+}
+
+.modal--title {
+    display: block;
+    text-align: center;
+    color: gold;
+}
+
+hr {
+    width: 90%;
+}
+
+.modal--footer {
+    display: block;
+    align-self: center;
+    margin-top: 1em;
+}
+
+.confirm--button {
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(0deg, rgb(0, 207, 35) 82%, rgba(255,255,255,0.4009978991596639) 96%,rgb(0, 207, 35) 99%);
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 7em;
+}
+
+.confirm--button:hover {
+    background: linear-gradient(0deg, rgb(60, 255, 93) 82%, rgba(255,255,255,0.4009978991596639) 96%,rgb(60, 255, 93) 99%);
+}
+
+.confirm--buttonDisabled {
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+    color: wheat;
+    background: grey;
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 7em;
+    opacity: 0.3;
+}
+
+.modal--body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .confirm--button {
+        font-size: 0.5em;
+        height: 2.5em;
+        width: 12em;
+        font-family: 'Gantari', sans-serif;
+    }
+    .confirm--buttonDisabled {
+        font-size: 0.5em;
+        height: 2.5em;
+        width: 12em;
+        font-family: 'Gantari', sans-serif;
+    }
+    .modal--title {
+        font-size: 0.5em;
+    }
+    .modal--container {
+        padding: 1em 1em;
+    }
+}

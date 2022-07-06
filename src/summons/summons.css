@@ -1,0 +1,471 @@
+body {
+    background-image: url('../background_blue.jpg');
+    background-size: cover;
+}
+
+.home--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.home--title {
+    color: gold;
+    font-family: 'Courgette', cursive;
+    font-size: 42px;
+}
+
+.banners--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem 0;
+}
+
+.banners--title {
+    color: gold;
+    font-family: 'Courgette', cursive;
+    font-size: 24px;
+}
+
+.banners--small {
+    max-width: 7%;
+    transition: 0.3s ease-in-out;
+}
+
+.banners--small:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.banners--scaled {
+    max-width: 7%;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.draw--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem 0;
+}
+
+.draw--button {
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(0deg, rgb(0, 207, 35) 82%, rgba(255,255,255,0.4009978991596639) 96%,rgb(0, 207, 35) 99%);
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 12rem;
+}
+
+.draw--button:hover {
+    background: linear-gradient(0deg, rgb(60, 255, 93) 82%, rgba(255,255,255,0.4009978991596639) 96%,rgb(60, 255, 93) 99%);
+}
+
+.download--button--multi {
+    position: absolute;
+    margin-top: 25em;
+    margin-left: 55em;
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(0deg, rgb(0, 207, 35) 82%, rgba(255,255,255,0.4009978991596639) 96%,rgb(0, 207, 35) 99%);
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 12rem;
+}
+
+.download--button--multi:hover {
+    background: linear-gradient(0deg, rgb(60, 255, 93) 82%, rgba(255,255,255,0.4009978991596639) 96%,rgb(60, 255, 93) 99%);
+}
+
+.download--button--single {
+    position: absolute;
+    margin-top: 10em;
+    margin-left: 55em;
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(0deg, rgb(0, 207, 35) 82%, rgba(255,255,255,0.4009978991596639) 96%,rgb(0, 207, 35) 99%);
+    border: none;
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 12rem;
+}
+
+.download--button--single:hover {
+    background: linear-gradient(0deg, rgb(60, 255, 93) 82%, rgba(255,255,255,0.4009978991596639) 96%,rgb(60, 255, 93) 99%);
+}
+
+.download--container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inactive {
+    display: none;
+}
+
+.draw--title {
+    color: gold;
+    font-family: 'Courgette', cursive;
+    font-size: 32px; 
+}
+
+.banner--big {
+    width: 100%;
+}
+
+.multi--container {
+    width: 40em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 2px rgb(20, 13, 95);
+}
+
+.single--container {
+    width: 40em;
+    height: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(20, 13, 95);
+}
+
+.character--multi {
+    margin: 1.5rem 1rem;
+}
+
+.first--pity900 {
+    height: 100%;
+    border-left: 2px solid rgb(20, 13, 95);
+    position: absolute;
+    left: 33.3%;
+}
+
+.first--pity600 {
+    height: 100%;
+    border-left: 2px solid rgb(20, 13, 95);
+    position: absolute;
+    left: 50%;
+}
+
+.second--pity {
+    height: 100%;
+    border-left: 2px solid rgb(20, 13, 95);
+    position: absolute;
+    left: 66.6%;
+}
+
+.first--pityLabel {
+    position: absolute;
+    left: 29%;
+    font-family: 'Courgette', cursive;
+}
+
+.second--pityLabel {
+    position: absolute;
+    left: 62.3%;
+    font-family: 'Courgette', cursive;
+}
+
+.third--pityLabel {
+    position: absolute;
+    left: 95.7%;
+    font-family: 'Courgette', cursive;
+}
+
+.character--hover {
+    margin: 1em 1em;
+}
+
+.character--hover:hover {
+    border: 1.5px solid rgb(20, 13, 95);
+}
+
+.character--selected {
+    margin: 1em 1em;
+    border: 2px solid rgb(20, 13, 95);
+}
+
+.pityBar--banner {
+    position: absolute;
+    top: 1%;
+    right: 0;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.bigBanner--container {
+    position: relative;
+    margin-top: 1em;
+}
+
+.pity--bar {
+    width: 100%;
+    height: 1.5em;
+    border: solid 3px rgb(20, 13, 95);
+    border-radius: 12px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.pity--barBanner {
+    width: 100%;
+    height: 1.5em;
+    border: solid 3px rgb(20, 13, 95);
+    border-radius: 12px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.ssr--sidePity1--900 {
+    border: solid 1.5px rgb(20, 13, 95);
+    font-size: 0.8em;
+    width: 2em;
+    height: 2em;
+    top: -3em;
+    left: calc(33.3% - 1em);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gantari', sans-serif;
+    color: white;
+    background-color: rgb(119, 119, 255);
+}
+
+.ssr--sidePity1--900 {
+    border: solid 1.5px rgb(20, 13, 95);
+    font-size: 0.8em;
+    width: 2em;
+    height: 2em;
+    top: -3em;
+    left: calc(33.3% - 1em);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gantari', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(119, 119, 255);
+}
+
+.ssr--sidePity1--600 {
+    border: solid 1.5px rgb(20, 13, 95);
+    font-size: 0.8em;
+    width: 2em;
+    height: 2em;
+    top: -3em;
+    left: calc(50% - 1em);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gantari', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(119, 119, 255);
+}
+
+.ssr--sidePity2 {
+    border: solid 1.5px rgb(20, 13, 95);
+    font-size: 0.8em;
+    width: 2em;
+    height: 2em;
+    top: -3em;
+    left: calc(66.6% - 1em);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gantari', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(119, 119, 255);
+}
+
+.pityBar--drawing {
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ssr--sidePity3--900 {
+    border: solid 1.5px rgb(20, 13, 95);
+    font-size: 0.8em;
+    width: 2.5em;
+    height: 2.5em;
+    bottom: -3.5em;
+    left: calc(33.3% - 1.25em);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gantari', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(119, 119, 255);
+}
+
+.ssr--sidePity3--600 {
+    border: solid 1.5px rgb(20, 13, 95);
+    font-size: 0.8em;
+    width: 2.5em;
+    height: 2.5em;
+    bottom: -3.5em;
+    left: calc(50% - 1.25em);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gantari', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(119, 119, 255);
+}
+
+.ssr--sidePity4 {
+    border: solid 1.5px rgb(20, 13, 95);
+    font-size: 0.8em;
+    width: 2.5em;
+    height: 2.5em;
+    bottom: -3.5em;
+    left: calc(66.6% - 1.25em);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gantari', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(119, 119, 255);
+}
+
+.arrow--pityBar {
+    font-size: 2em;
+    margin: 0 0;
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+        font-family: 'Gantari', sans-serif;
+    }
+    .home--container {
+        overflow-x: hidden;
+        font-family: 'Gantari', sans-serif;
+    }
+    .home--title {
+        text-align: center;
+        font-family: 'Gantari', sans-serif;
+        font-size: 2em;
+    }
+    .banners--title {
+        font-family: 'Gantari', sans-serif;
+        font-size: 1em;
+    }
+    .banners--container {
+        gap: 2.5em;
+    }
+    .draw--title {
+        font-family: 'Gantari', sans-serif;
+        font-size: 1em;
+    }
+    .draw--button {
+        font-size: 0.5em;
+        height: 2.5em;
+        width: 12em;
+        font-family: 'Gantari', sans-serif;
+    }
+    .download--button--multi {
+        bottom: 100%;
+        margin-top: 0;
+        margin-bottom: 2.5em;
+        margin-left: unset;
+        font-size: 0.5em;
+        height: 2.5em;
+        width: 12em;
+        font-family: 'Gantari', sans-serif;
+    }
+    .download--button--single {
+        bottom: 100%;
+        margin-top: 0;
+        margin-bottom: 2.5em;
+        margin-left: unset;
+        font-size: 0.5em;
+        height: 2.5em;
+        width: 12em;
+        font-family: 'Gantari', sans-serif;
+    }
+    .draw--container {
+        width: 60%;
+        justify-content: center;
+        gap: 1.5em;
+        padding: 1em 0;
+        margin: 0 0;
+    }
+    .banners--small {
+        max-width: 3em;
+    }
+    .banners--scaled {
+        max-width: 3em;
+    }
+    .character--multi {
+        margin: 0.7em 0.5em;
+        width: 1.7em;
+    }
+    .multi--container {
+        width: 50%;
+    }
+    .pity--bar {
+        height: 1em;
+    }
+    .pity--character {
+        width: 3em;
+    }
+    .character--hover {
+        width: 3em;
+    }
+    .character--selected {
+        width: 3em;
+    }
+    .ssr--sidePity3--900 {
+        width: 2em;
+        height: 2em;
+        bottom: -3em;
+        left: calc(33.3% - 1em);
+    }
+    
+    .ssr--sidePity3--600 {
+        width: 2em;
+        height: 2em;
+        bottom: -3em;
+        left: calc(50% - 1em);
+    }
+    
+    .ssr--sidePity4 {
+        width: 2em;
+        height: 2em;
+        bottom: -3em;
+        left: calc(66.6% - 1em);
+    }
+    .arrow--pityBar {
+        font-size: 1.75em;
+    }
+}
